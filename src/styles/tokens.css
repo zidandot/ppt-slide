@@ -1,0 +1,67 @@
+/* =============================================================================
+   TOKENS DESAIN — identitas visual deck "Aruna Tegallalang".
+   -----------------------------------------------------------------------------
+   Palet inti diambil dari logotype Aruna (Aruna-Tegallalang.png):
+     orange #FC5C0D · golden #FD9F15 · teal #0C988D · deep teal #087D74
+     leaf green #1F880B · near black #090C0B · warm ivory #F6F0E6
+     soft neutral #D9DFDA.
+   Nama token lama (ink/deep/teal/cream/…) tetap dipertahankan sebagai alias agar
+   seluruh komponen lama tidak perlu diubah; nilainya dipetakan ke palet baru.
+   Ubah nilai di satu tempat ini untuk mengubah warna seluruh website.
+   ========================================================================== */
+
+:root {
+  /* --- Palet brand mentah (sumber kebenaran) ---------------------------- */
+  --aruna-orange: #fc5c0d;
+  --aruna-gold: #fd9f15;
+  --aruna-teal: #0c988d;
+  --aruna-deep-teal: #087d74;
+  --aruna-leaf: #1f880b;
+  --aruna-black: #090c0b;
+  --aruna-ivory: #f6f0e6;
+  --aruna-neutral: #d9dfda;
+
+  /* --- Warna inti (alias kompatibel) ------------------------------------ */
+  --aruna-ink: #0e1a18; /* teks gelap di atas krem                     */
+  --aruna-deep: #090c0b; /* latar paling gelap (cover/closing)          */
+  --aruna-teal-700: #087d74;
+  --aruna-teal-soft: #5fbcb4; /* teal pudar untuk batas & ikon          */
+  --aruna-sage: #d9dfda; /* neutral lembut                                */
+  --aruna-sand: #fd9f15; /* golden orange                                */
+  --aruna-sand-soft: #fdc98a;
+  --aruna-cream: #f6f0e6; /* warm ivory                                  */
+  --aruna-paper: #fbf8f2; /* kertas terang                              */
+  --aruna-clay: #fc5c0d; /* aruna orange                                 */
+  --aruna-ember: #fc5c0d; /* oranye aksen utama                         */
+  --aruna-gold-deep: #e08a09;
+  --aruna-line: rgba(246, 240, 230, 0.14);
+
+  /* --- Tipografi -------------------------------------------------------- */
+  --font-display: "League Spartan", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-script: "Great Vibes", "League Spartan", cursive;
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* --- Spasi & bentuk --------------------------------------------------- */
+  --space-section: clamp(4.5rem, 11vh, 7.5rem);
+  --content-max: 1200px;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-pill: 999px;
+
+  /* --- Gerak ------------------------------------------------------------ */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-deep: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 200ms;
+  --dur-base: 420ms;
+  --dur-slow: 850ms;
+
+  /* --- Lapisan ---------------------------------------------------------- */
+  --z-bg: 0;
+  --z-thread: 4;
+  --z-content: 10;
+  --z-chrome: 60;
+  --z-overlay: 90;
+}

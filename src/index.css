@@ -1,0 +1,48 @@
+/* =============================================================================
+   INDEX.CSS — titik masuk gaya.
+   Urutan penting: Tailwind dulu, lalu token & gaya global.
+   Blok @theme mendaftarkan warna/font sebagai utilitas Tailwind
+   (mis. class "bg-teal", "text-ink", "font-display").
+   Warna semantik (fg, muted, faint, line, surface, accent) dipakai oleh
+   komponen isi slide dan dapat ditimpa per halaman sesuai "tone"
+   (terang/gelap) lewat variabel CSS pada elemen slide.
+   ========================================================================== */
+@import "tailwindcss";
+@import "./styles/tokens.css";
+@import "./styles/layout.css";
+@import "./styles/animations.css";
+@import "./styles/global.css";
+
+@theme {
+  /* --- Warna brand — dipetakan dari tokens.css -------------------------- */
+  --color-ink: #0e1a18;
+  --color-deep: #090c0b;
+  --color-teal: #0c988d;
+  --color-teal-700: #087d74;
+  --color-teal-soft: #5fbcb4;
+  --color-sage: #d9dfda;
+  --color-sand: #fd9f15;
+  --color-sand-soft: #fdc98a;
+  --color-cream: #f6f0e6;
+  --color-paper: #fbf8f2;
+  --color-clay: #fc5c0d;
+  --color-ember: #fc5c0d;
+  --color-leaf: #1f880b;
+  --color-gold: #fd9f15;
+
+  /* --- Warna semantik (default = tone terang) --------------------------- */
+  --color-bg: #090c0b;
+  --color-surface: rgba(251, 248, 242, 0.88);
+  --color-surface2: #efe9dd;
+  --color-fg: #0e1a18;
+  --color-muted: #3c514d;
+  --color-faint: #74857f;
+  --color-line: rgba(14, 26, 24, 0.16);
+  --color-accent: #087d74;
+
+  /* --- Tipografi -------------------------------------------------------- */
+  --font-display: "League Spartan", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-script: "Great Vibes", "League Spartan", cursive;
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, monospace;
+}
